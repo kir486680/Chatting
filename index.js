@@ -21,7 +21,7 @@ var db = mongoose.connection;
  var app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout:'layout'}));
