@@ -15,7 +15,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect('mongodb://kir486680:My2ndmail@ds019638.mlab.com:19638/kir486680');
 var db = mongoose.connection;
 
  var app = express();
